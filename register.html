@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Forma </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+
+    <h1 id="naslov">Forma za registraciju na kurs</h1>
+        <!--Form method-->
+        <form action="register.php" method="POST">
+            <fieldset>
+                <legend>Registruj se:</legend>
+                <!--Type text-->
+                <label for="name">Ime:</label>
+                <input  type="text" id="name" name="name" placeholder="Tvoje ime" > <br> <br>
+                <label for="last_name">Prezime:</label>
+                <input type="text" id="last_name" name="last_name"  placeholder="Tvoje prezime"  >
+                 <br> <br>
+
+                 <!--Type radio-->
+                <label >Pol:</label>
+                <label for="m">Muški</label>
+                <input type="radio"  name="gender" id="m" value="muski" > 
+                <label for="f"> Ženski </label>
+                <input type="radio"   name="gender" id="f" value="zenski">  <br> <br>
+              
+                <!--Type email-->
+
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="Tvoj e-mail" value=""> <br> <br>
+
+                <!--Type password-->   
+                <label for="password">Lozinka:</label>
+                <input type="password" name="password" id="password" placeholder="Tvoja lozinka" > <br> <br>
+                <label for="retype_password"> Ponovi lozinku:</label>
+                <input type="password" name="retype_password" id="retype_password" placeholder="Ponovi lozinku" > <br> <br>
+                <!--Type checkbox-->
+                <label for="course"> Odaberite kurs: </label> <br> <br>
+                <label for="js_react">JS/REACT</label>
+                <input type="checkbox" name="course[]" id="js_react" value="JSREACT " checked > </input>
+                <label for="php_wp">PHP/WP</label>
+                <input type="checkbox" name="course[]" id="php_wp" value="PHPWP "  checked> </input>
+                <label for="qa_java">QA/Java</label>
+                <input type="checkbox" name="course[]" id="qa_java" value="QAJAVA " checked > </input> <br> <br>
+                <!--Type file-->
+                <label for="image"> Ubacite Vašu Sliku: </label> <br>
+                <input type="file" name="image"> </input> <br> <br>
+                <!-- Type button-->
+               <button type="submit" name="submit" id="submit" value="submit"> Sačuvaj </button>
+                <button type="reset" name="reset" id="reset" value="reset">  Poništi </button> <br> 
+                
+            </fieldset>
+
+
+        </form>
+    
+    </body>
+</html>
