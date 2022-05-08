@@ -1,0 +1,135 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Register</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="theme/register.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+   
+    <div class="container">
+        <header>
+            <!-- Navigation bar -->
+            
+            <nav class="nav">
+               
+                <ul>
+                    <a href="index.html">  <div class="logo">Art <span class="vases"> Vases </span></div> </a>
+                    <li> <a href="index.html"> Home </a> </li>
+                    <li> <a href="contact-us.html"> Contact Us </a> </li>
+                    <li> <a href="products.html"> Products </a> </li>
+                    <li> <a href="about-us.html"> About Us </a> </li>
+                </ul>
+            </nav>
+            <!-- Hamburger menu-->
+           <div class="ham-menu">
+            <button type="button" id="ham_id" class="ham-button">
+            </button>
+            <label class="ham-label" for="ham_id"></label>
+        </div>
+        </header>
+
+
+<main>
+<div class="form1">
+<h1 id="naslov">Create your profile!</h1>
+        <!--Form method-->
+        <form >
+            <fieldset>
+                
+                <!--Type text-->
+                <label  for="name">Name:</label>
+                <input  class="input"  type="text" id="name" name="name" placeholder="Type your name here:" > <br> <br>
+                <label  for="last_name">Last Name:</label>
+                <input  class="input" type="text" id="last_name" name="last_name"  placeholder="Type your last name here:"  >
+                 <br> <br>
+
+                 <!--Type radio-->
+                 
+                <label >Gender:</label>
+                <div class="gen1">    <label for="m">Male</label>
+                <input  class="gen"type="radio"  name="gender" id="m" value="muski" >  </div>
+                <div class="gen1">     <label for="f"> Female </label>
+                <input  class="gen"type="radio"   name="gender" id="f" value="zenski"> </div> <br> <br>
+              
+                <!--Type email-->
+
+                <label for="email">E-mail:</label>
+                <input   class="input" type="email" name="email" id="email" placeholder="Type your e-mail here:" value=""> <br> <br>
+
+                <!--Type password-->   
+                <label for="password">Password:</label>
+                <input  class="input" type="password" name="password" id="password" placeholder="Your password:" > <br> <br>
+                <label for="retype_password"> Repeat Password:</label>
+                <input  class="input" type="password" name="retype_password" id="retype_password" placeholder="Repeat your password:" > <br> <br>
+                <!--Type radio-->
+                <div class="newsletter">
+                <label for="course">Would you like to receive our Newsletter? </label> <br> <br>
+            <div class="news">    <label for="js_react">Yes, I want to know everything about pottery!</label>
+                <input type="radio" name="course[]" id="js_react" value="yes! " checked > </input> </div>
+                <div class="news">     <label for="php_wp">Only special offers.</label>
+                <input type="radio" name="course[]" id="php_wp" value="yes "  > </input> </div>
+                <div class="news">     <label for="qa_java">No,thanks.</label> 
+                <input type="radio" name="course[]" id="qa_java" value="no" > </input> </div> <br> <br>
+            </div>
+               
+                <!-- Type button-->
+               <button type="submit" name="submit" id="submit" value="submit"> Save </button>
+                <button type="reset" name="reset" id="reset" value="reset">  Reset </button> <br> 
+                
+            </fieldset>
+
+
+        </form>
+    </div>
+    </main>
+    <footer>
+      
+        <!--  <div class="top" > <button id="button-top"> <a href="#">Back to top</a> </button> </div> -->
+          <div class="copyright">
+              <p> <b> All rights reserved to Ⓒ Art Vases.</b> <br> By purchasing products on this site you agree to our costumers' rights and cookies policy.</p>
+          </div>
+         
+          <div class="literature"> 
+              <h2> Bibliography:</h2>
+              <div class="lit-lists">
+              <ul class="html"> 
+              <h3> HTML</h3>
+              <li> W3 Schools</li>
+              <li> StackOverflow</li>
+              <li> HTML-Center</li></ul> 
+              <ul class="php"> 
+                <h3> PHP</h3>
+                <li> W3 Schools</li>
+                <li> StackOverflow</li>
+                <li> PHP</li></ul> 
+                <ul class="css"> 
+                    <h3> CSS</h3>
+                    <li> W3 Schools</li>
+                    <li> ColorHunt</li>
+                    <li> Pinterest</li></ul> </div>
+          </div>
+          <div class="reg"> <li> <a href="register.html"> Register</a> </li>
+                 <li> <a href="#">Login</a></li>
+         </div>
+     
+     
+         </footer>
+     
+     
+     
+     
+     
+     
+     
+         </div>
+         </div>
+     
+     </body>
+     
+     </html>

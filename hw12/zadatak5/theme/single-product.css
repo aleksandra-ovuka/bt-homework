@@ -1,0 +1,561 @@
+
+*{
+    outline: 1px red;
+}
+html {
+    padding: 0; 
+    margin: 0;
+ overflow-x: hidden;}
+ .container {
+     width: 100%;
+    min-height: 100%;
+     
+     /*border iskljuci kasnije */
+ }
+.container-main {
+    width: 100%;
+   min-height:  100%;
+}
+ 
+ header {
+     text-align: center;
+    margin-left: 1.5em;
+     position: fixed;
+     top: 0;
+    
+     
+ }
+ 
+ .logo {
+     color: #FBF8F1;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-weight: bolder;
+     padding: 0%;
+     width: 20px;
+     height: 10px;
+     font-size: 18px;
+     margin: 0%;
+     font-style: italic;
+     text-align: center;
+    
+ 
+ }
+ 
+ .vases {
+     color: #b188bcc6;
+     background-color: #e9dac1f8;
+     border: hidden;
+     border-radius:5px;
+ }
+ 
+ 
+ #ham_id {
+     visibility: none;
+     display: none;
+     padding: 0%;
+ }
+ .ham-label {
+     position: fixed;
+     top: 20px;
+     right: 20%;
+     width: 9vh;
+     height: 9vh;
+     display: none;
+     border: hidden;
+     padding: 0px;
+     margin: auto;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background:linear-gradient(
+         to bottom, 
+         #a68dad, #a68dad 20%, 
+         rgba(255, 255, 255, 0) 20%, rgba(255, 255, 255, 0) 40%, 
+         #a68dad 40%, #a68dad 60%, 
+         rgba(255, 255, 255, 0) 60%, rgba(255, 255, 255, 0) 80%, 
+         #a68dad 80%, #a68dad 100% );
+ 
+ 
+ }
+ 
+ 
+ .ham-label:hover {
+     background-color: #54bab8f7;
+ }
+ 
+ 
+ 
+ .nav { 
+     display: inline-block;
+     background-color: #54bab8f7;
+     text-align: center;
+     width: 1220px;
+     border-bottom: 2px #E9DAC1 solid;
+     border-radius: 10px;
+     height: 70px;
+     
+ 
+ }
+ .nav li{
+     display: inline-block;
+     list-style: none;
+     text-decoration: none;
+     width: 180px;
+     padding: 10px;
+     margin-right: 2em;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-size: large;
+     font-weight: bolder;
+     
+ }
+ .nav a {
+     text-decoration: none;
+     color: #E9DAC1;
+ }
+ .nav a:hover {
+     background-color: antiquewhite;
+ }
+ 
+ 
+ body {
+     background-color:#FBF8F1; }
+
+     #filter-button {
+        background-color: #54bab8f7;
+        color: #E9DAC1 ;
+        
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 10vh;
+        height: 10vh;
+        display: none;
+        border: hidden;
+        padding: 0px;
+        margin: 0px;
+        border-radius: 50%;
+    
+    }
+    #filter-button i {
+        color: #FBF8F1;
+        font-size: 24px;
+    
+    }
+    #filter-button:hover {
+    background-color: #a68dad;
+    }
+
+    img {
+        max-width: 90%;
+        min-height: 90%;
+        margin: 0;
+        text-align: center;
+        cursor: zoom-in;
+    
+        }
+    img:hover {
+        position:relative;
+        top: -15px;
+        left: -20px;
+        width: 180px;
+        height:auto;
+        display:block;
+        z-index:999;
+    }
+    
+    
+   
+    
+    
+    .title a {
+        text-decoration: none;
+        color: #E9DAC1;
+    }
+    .title a:hover {
+        color: #54bab8a2;
+    }
+    
+    .cart-button button {
+        font-size: 15pt;
+        padding: 0.1em;
+        background-color: #a68dad;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #E9DAC1;
+        font-weight: bolder;
+        cursor: pointer;
+        border-radius: 4px;
+        margin-top: 2em;
+    }
+    button:hover{
+    background-color: #54bab8f7;}
+    
+    .price {
+        
+        margin:0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #E9DAC1;
+        font-weight: bolder;;
+        font-weight: bolder;
+        font-size: 15pt;
+        background-color: #54bab8f7;
+        height: fit-content;
+        
+    
+    }
+        
+    article {
+        
+        border: hidden ;
+        margin-bottom: 0%;
+        
+        border-radius: 10px;
+        background-color: #E9DAC1;
+    }
+    
+    .title {
+        
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       font-size: 14pt;
+        margin-bottom: 4px;
+        font-weight:bold ;
+        height: 60px;
+        color: #a68dad;
+        text-align: center;
+    }
+    
+    
+     
+         
+          
+        
+      
+      #button-top:hover {
+          background-color: #a68dad;
+      }
+     
+      
+      footer  {
+          font-size: 16pt;
+        width: 100%;
+        height: 290px;
+          background-color: #54bab8ee;
+          text-align: center;
+          display: grid;
+          grid-template-columns: 30% 30% 30%;
+       margin-top: 1em;
+      
+       border:hidden ;
+       border-radius: 2px;
+    
+          
+          
+      }
+       
+       
+      
+      
+      
+      .nav li:first-child:hover {
+            background-color: rgba(159, 114, 202, 0.452);
+      }
+      .nav li:nth-child(2):hover {
+        background-color: rgba(114, 202, 195, 0.452);
+    }
+        .nav li:last-child:hover {
+            background-color: rgba(222, 184, 135, 0.63);
+        } 
+        .nav li:nth-last-child(2):hover {
+            background-color: rgba(105, 105, 105, 0.498);
+        }
+    
+        article:hover {
+            background-color: antiquewhite;
+        }
+    
+      
+        .copyright p {
+            color: #E9DAC1;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin-top: 4em;
+            text-align: justify;
+            font-size: 14pt;
+            padding: 8px;
+        }
+        .literature h3 {
+            color: #E9DAC1;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+       .literature li {
+           color:#E9DAC1;
+           list-style: none;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           font-size: 14px;
+       }
+       .reg a {
+           text-decoration: none;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           color: #E9DAC1;
+          
+          
+       }
+       .reg li {
+           list-style: none;
+           margin-top: 3em;
+           font-weight: bolder;
+           font-size: 20pt;
+       }
+       .reg li a:hover {
+           color: #a68dad;
+           background-color: antiquewhite;
+       }
+       .reg {
+           border-left:#FBF8F1  3px inset;
+       }
+                
+      
+
+       
+       .other-articles2 {
+           display: grid;
+           grid-template-columns: 1fr 1fr 1fr 1fr;
+           
+           min-height: 100%;
+          
+           grid-column-gap: 1em;
+           margin: auto;
+       }
+       .main-article {
+           display: grid;
+           
+           text-align: center;
+           justify-content: center;
+           margin-top :10%;
+           
+           min-height: 100%;
+          
+       }
+       main {
+           min-height: 100%;
+           width: 100%;
+       }
+       .mainarticle {
+          display: grid;
+          grid-template-columns: 70% 30%;
+          grid-row: 1;
+          min-height: 100%;
+          height: 480px;
+          width: 900px;;
+          background-color: antiquewhite;
+           
+       }
+       .mainarticle img {
+           width: 320px;
+           height: auto;
+           border: hidden;
+           border-radius: 5px;
+           margin-top: 2em;
+           margin-top: 1em;
+       }
+       .other-articles img {
+           border: hidden;
+           border-radius: 5px;
+          min-height: 100%;
+          margin-left: 1em;
+           
+       }
+       .description-text {
+           border: hidden;
+           border-radius: 4px;
+           text-align: left;
+           
+           width: 900px;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           background-color: antiquewhite;
+           line-height: 2em;
+           padding-left: 1em;
+           
+           
+       }
+       .description legend{
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           margin-bottom: 1em;
+           margin-top: 2em;
+           color: #54bab8f7;
+           font-weight: bold;
+          
+       }
+       .description {
+           margin-bottom: 4em;
+       }
+       legend {
+           text-align: left;
+       }
+     .mainarticle  .cont-art {
+           display: grid;
+           grid-template-rows: 50% 50%;
+       }
+     .mainarticle  .title a {
+           font-size: 20pt;
+           padding: 0.2em;
+           border: hidden;
+           width: 100%;
+           border-radius: 4px;
+           margin-top: 1em;
+           
+           color:#54bab8ee;
+       }
+       .mainarticle .title {
+           margin-top: 1em;
+       }
+       .mainarticle .price {
+           background-color:  #54bab8ee;
+           width: 100%;
+           text-align: center;
+           align-content: right;
+           display: block;
+       }
+       .price-cart-stock {
+           display: grid;
+           grid-template-rows: 1fr 1fr 1fr;
+       }
+       
+       .stock {
+           color: lightseagreen;
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           font-weight:bold ;
+           font-size: 15pt;
+       }
+       .other-articles-title {
+           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+           color: #54bab8ee;
+           font-weight: bold;
+           
+       }
+       .other-articles2 .title {
+           height: 50px;
+       }
+
+       .other-articles2 .title a {
+           color: #a68dad;
+           text-align: center;
+       }
+       .other-articles .price {
+           width: 100%;
+           text-align: right;
+           margin-bottom: 4em;
+           margin-left: 0.2em;
+       }
+       .other-articles .price-cart {
+           text-align: right;
+       }
+       
+       .other-articles {
+           width: 900px;
+           margin: auto;
+           height: 100%;
+       }
+       .other-articles button {
+           width: 58px;
+           font-size: 12px;
+           bottom: 0;
+       }
+       .other-articles .price-cart {
+           max-height: 100%;
+           display: inline-block;
+       }
+       .other-articles .cart-button {
+           display: block;
+           margin-top: 4em;
+           bottom: 0;
+       }
+       .other-articles .cont-art {
+           display: flex;
+       }
+       .other-articles2 article {
+           height: 280px;
+       }
+       .literature {
+        display: block;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #E9DAC1;
+        font-size: medium;
+    }
+    .lit-lists {
+        display: flex;
+    }
+    @media screen and (max-width:992px) {
+        
+        .nav {
+            display: none;
+            width: 0;
+        }
+        .ham-label {
+            display: inline-block;
+            padding: 0;
+            margin: 0;
+            margin-right: 3.2em;
+            width: 14vh;
+            height: 14vh;
+            } 
+        aside {
+            display: none;
+            width: 0;
+        }
+        .filters {
+            display: none;
+        }
+        #filter-button {
+            display: inline;
+            position: fixed;
+            font-weight: bold;
+            padding: 0%;
+            width: 16vh;
+            height: 16vh;
+            background-color: #54bab8a2;
+            margin-left: 0.5em; }
+        .mainarticle {
+            width: 80%;
+        }
+        .other-articles2 {
+            width: 90%;
+            margin: 0;
+        }
+        .copyright {
+            overflow-wrap: break-word;
+            width: 90%;
+            font-size: small;
+        }
+        .literature {
+            margin: 0;
+        }
+        .lit-lists {
+            display: block;
+        }
+        footer {
+            height: fit-content;
+            width: 100%;
+        }
+    }
+    @media screen and (max-width:576px){
+        .other-articles2 {
+            display: grid;
+            grid-template-columns: 20% 20% 20% 20%;
+            width: 576px;
+        }
+        .other-articles2 button {
+            display: none;
+            
+
+        }
+        .description {
+            width: 100vh;
+        }
+        .description-text {
+            width: 100vh;
+        }
+        .other-articles2 .title {
+            font-size: small;
+            
+        }
+        .other-articles2 article {
+            height: 105%;
+        }
+    }
