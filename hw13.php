@@ -27,7 +27,7 @@ return $pb;
 
 echo PovrsinaBazena(4,7). " je povrsina ovog bazena <br>";
 
-// Funkcija za povrsinu svih bazena 
+// Funkcija za povrsinu svih bazena (ako su sva tri razlicitih mera)
 function PovrsinaSvihBazena ($a1,$b1,$a2,$b2,$r1) {
     $psb= PovrsinaPravougaonika($a1,$b1) + PovrsinaKruga($r1) + PovrsinaBazena($a2,$b2) ;
         return $psb;
@@ -37,10 +37,13 @@ echo PovrsinaSvihBazena (6,8,4,7,5). " je povrsina svih bazena zajedno";
 
 
 
+//Funkcija za povrsinu svih bazena (ako  im je ista stranica $a) 
+function PovrsinaIstihBazena ($a,$b) {
+    $pib= PovrsinaPravougaonika($a,$b) + PovrsinaKruga($a) + PovrsinaBazena($a,$b);
+}
 
 
-
-
-
+echo PovrsinaIstihBazena(6,8). " je povrsina svih bazena ako im je jednaka stranica a odnosno precnik."
+ 
 
 ?>
