@@ -3,7 +3,8 @@
 function FunkcijaZaKrofne ( $UkupnoBrasno, $BrasnoPoKrofni,$OstatakFlag=NULL) {
     $BrojKrofni=0;
     for ($UkupnoBrasno;$UkupnoBrasno>=$BrasnoPoKrofni;$UkupnoBrasno-=$BrasnoPoKrofni,$BrojKrofni++) {}
-    if (is_null($OstatakFlag)) return $UkupnoBrasno; else return $BrojKrofni;
+    if (is_null($OstatakFlag)) $OstatakFlag==false;
+    if ($OstatakFlag==false)  return $UkupnoBrasno; else return $BrojKrofni;
   
 }
 
