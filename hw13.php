@@ -37,7 +37,7 @@ echo PovrsinaSvihBazena (6,8,4,7,5). " je povrsina svih bazena zajedno";
 
 
 
-//Funkcija za povrsinu svih bazena (ako  im je ista stranica $a) 
+//Funkcija za povrsinu svih bazena (ako  im je ista stranica $b) 
 function PovrsinaIstihBazena ($b,$a) {
     $pib= PovrsinaPravougaonika($b,$a) + PovrsinaKruga($b) + PovrsinaBazena($b,$a);
 }
